@@ -1,12 +1,12 @@
 # PROGRESS
 
-Last updated: 2026-10-04 by Claude (planning chat in the Claude app)
+Last updated: 2026-10-10 by Claude Code
 
 ## Status
-Planning complete. No code yet. Repo contains only `AGENTS.md`, `CLAUDE.md`, `PROGRESS.md` and `docs/detector-v1-spec.md`.
+Task 001 (repo scaffold) done on branch `task/001-repo-scaffold`, pushed. Local: ruff clean, 5 unit tests pass on Python 3.12 via uv. CI green on GitHub Actions (run 38066279570). Ready to merge to `main`.
 
 ## Next task
-**001 — Repo scaffold.** See the queue below.
+**002 — Acceptance tests A–D, written before the detector.** See the queue below.
 
 ## Queue
 
@@ -49,7 +49,7 @@ Planning complete. No code yet. Repo contains only `AGENTS.md`, `CLAUDE.md`, `PR
 None.
 
 ## Unreviewed code
-None.
+- `task/001-repo-scaffold` — scaffold only (pyproject, layout, .gitignore, CI, trivial import test). No engine/detector maths, so cross-agent review not mandatory; CI green; ready to merge.
 
 ## Decisions log
 - 2026-10-04 — Four projects locked, in order: detector → cross-sectional alpha → slow news diffusion → strategy lab.
@@ -57,6 +57,7 @@ None.
 - 2026-10-04 — Claude Code builds, Codex reviews. Roles swap when usage limits hit. Detector and engine maths are never merged unreviewed.
 - 2026-10-04 — Forward testing checks operations only. An edge must be established by historical out-of-sample results and the detector.
 - 2026-10-04 — Subperiod check includes a half-vs-half significance test; simulation showed the ratio rule alone missed about 1 in 40 decayed edges.
+- 2026-10-10 — Environment tool: **uv**. `.python-version` pins 3.12; `uv.lock` committed; dev deps in `[dependency-groups] dev`. Setup: `uv sync`; tests: `uv run pytest -m "not acceptance"`; lint: `uv run ruff check . && uv run ruff format --check .`. CI uses `uv sync --locked`. 001 merged without cross-review (no maths)
 
 ## Open questions
-- Python environment tool (uv or pip + venv): the agent doing task 001 decides and records the choice here.
+None.
