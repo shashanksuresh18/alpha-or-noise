@@ -3,7 +3,7 @@
 Last updated: 2026-10-10 by Claude Code
 
 ## Status
-Task 001 (repo scaffold) done on branch `task/001-repo-scaffold`, pushed. Local: ruff clean, 5 unit tests pass on Python 3.12 via uv. CI green status to be confirmed on GitHub Actions before merge.
+Task 001 (repo scaffold) done on branch `task/001-repo-scaffold`, pushed. Local: ruff clean, 5 unit tests pass on Python 3.12 via uv. CI green on GitHub Actions (run 38066279570). Ready to merge to `main`.
 
 ## Next task
 **002 — Acceptance tests A–D, written before the detector.** See the queue below.
@@ -49,7 +49,7 @@ Task 001 (repo scaffold) done on branch `task/001-repo-scaffold`, pushed. Local:
 None.
 
 ## Unreviewed code
-- `task/001-repo-scaffold` — scaffold only (pyproject, layout, .gitignore, CI, trivial import test). No engine/detector maths, so cross-agent review not mandatory; merge once CI is green.
+- `task/001-repo-scaffold` — scaffold only (pyproject, layout, .gitignore, CI, trivial import test). No engine/detector maths, so cross-agent review not mandatory; CI green; ready to merge.
 
 ## Decisions log
 - 2026-10-04 — Four projects locked, in order: detector → cross-sectional alpha → slow news diffusion → strategy lab.
