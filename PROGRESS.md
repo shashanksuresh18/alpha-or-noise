@@ -57,7 +57,7 @@ None.
 - 2026-10-04 — Claude Code builds, Codex reviews. Roles swap when usage limits hit. Detector and engine maths are never merged unreviewed.
 - 2026-10-04 — Forward testing checks operations only. An edge must be established by historical out-of-sample results and the detector.
 - 2026-10-04 — Subperiod check includes a half-vs-half significance test; simulation showed the ratio rule alone missed about 1 in 40 decayed edges.
-- 2026-10-10 — Environment tool: **uv**. `.python-version` pins 3.12; `uv.lock` committed; dev deps in `[dependency-groups] dev`. Setup: `uv sync`; tests: `uv run pytest -m "not acceptance"`; lint: `uv run ruff check . && uv run ruff format --check .`. CI uses `uv sync --locked`.
+- 2026-10-10 — Environment tool: **uv**. `.python-version` pins 3.12; `uv.lock` committed; dev deps in `[dependency-groups] dev`. Setup: `uv sync`; tests: `uv run pytest -m "not acceptance"`; lint: `uv run ruff check . && uv run ruff format --check .`. CI uses `uv sync --locked`. 001 merged without cross-review (no maths)
 
 ## Open questions
 None.
